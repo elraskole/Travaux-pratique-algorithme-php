@@ -23,17 +23,17 @@ if (isset($_GET["donnees"]) && !empty($_GET["donnees"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le plus grand</title>
+    <title>Résolution de l'équation ax+b=0</title>
 </head>
 
 <body>
 
-    <form method="POST" action="/exercice-1/traitement-index.php">
+    <form method="POST" action="/exercice-6/traitement-index.php">
         <table>
 
             <tr>
                 <td colspan="2">
-                    <h1>LE PLUS GRAND</h1>
+                    <h1>Résolution de l'équation ax+b=0</h1>
                 </td>
             </tr>
 
@@ -49,11 +49,11 @@ if (isset($_GET["donnees"]) && !empty($_GET["donnees"])) {
 
             <tr>
                 <td>
-                    <label for="nombre-1">Nombre 1 :</label>
+                    <label for="nombre-1">Nombre 1 (a) :</label>
                 </td>
                 <td>
                     <input type="number" name="nombre-1" id="nombre-1" class="nombre-1" placeholder="Veuillez entrer le premier nombre" 
-                    value="<?= (isset($donnees["nombre-1"]) && (!empty($donnees["nombre-1"]) || ["nombre-1"] == 0)) ? $donnees["nombre-1"] : "" ?>" required />
+                    value="<?= (isset($donnees["nombre-1"]) && (!empty($donnees["nombre-1"]) || $donnees["nombre-1"] == 0)) ? $donnees["nombre-1"] : "" ?>" required />
                 </td>
             </tr>
 
@@ -67,11 +67,11 @@ if (isset($_GET["donnees"]) && !empty($_GET["donnees"])) {
 
             <tr>
                 <td>
-                    <label for="nombre-2">Nombre 2 :</label>
+                    <label for="nombre-2">Nombre 2 (b) :</label>
                 </td>
                 <td>
                     <input type="number" name="nombre-2" id="nombre-2" class="nombre-2" placeholder="Veuillez entrer le deuxième nombre" 
-                    value="<?= (isset($donnees["nombre-2"]) && (!empty($donnees["nombre-2"]) || ["nombre-2"] == 0)) ? $donnees["nombre-2"] : "" ?>" />
+                    value="<?= (isset($donnees["nombre-2"]) && (!empty($donnees["nombre-2"]) || $donnees["nombre-2"] == 0)) ? $donnees["nombre-2"] : "" ?>" />
                 </td>
             </tr>
 
